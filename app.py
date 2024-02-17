@@ -3,7 +3,7 @@ from telegram import Update
 from telegram.ext import Application, CommandHandler, ContextTypes
 
 # Replace 'YOUR_BOT_TOKEN' with the token you received from BotFather
-TOKEN = '5587851032:AAHskQYbsoWYmr446_nmSg9clhFg_wd9BVc'
+TOKEN = '6106990052:AAE3lgYrCSvTlvbqVgr-h7nqIIEhPcwWjek'
 
 async def start_command(update: Update, context: ContextTypes.DEFAULT_TYPE):
     await update.message.reply_text("Hi sir")
