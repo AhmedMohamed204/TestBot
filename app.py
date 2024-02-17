@@ -18,9 +18,7 @@ def main():
     app = Application.builder().token(TOKEN).build()
     app.add_handler(CommandHandler("start", start_command))
     print("Polling...")
-    try:
-        app.run_polling(poll_interval=3)
-    except : 
-        return
+    app.run_polling(poll_interval=3)
+    
 if __name__ == '__main__':
     main()
