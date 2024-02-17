@@ -17,9 +17,10 @@ def main():
     print("Your bot has been started")
     app = Application.builder().token(TOKEN).build()
     app.add_handler(CommandHandler("start", start_command))
-    app.add_error_handler(error)
     print("Polling...")
-    app.run_polling(poll_interval=3)
-
+    try:
+        app.run_polling(poll_interval=3)
+    except : 
+        return
 if __name__ == '__main__':
     main()
